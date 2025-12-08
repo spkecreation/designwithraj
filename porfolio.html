@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rishabh Raj | Portfolio Showcase</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="portAnim.css">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+
+    :root {
+      --primary: #00ff66;
+      --secondary: #ffffff;
+      --dark: #000000;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    .gradient-text {
+      background: linear-gradient(90deg, #00ff66, #00cc55);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    nav a {
+      color: white;
+      font-weight: 600;
+      transition: .3s;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    /* ⭐ Pinterest Masonry Grid WITH 10px gaps */
+    .insta-grid {
+      column-count: 4;
+      column-gap: 10px;
+      /* horizontal gap */
+      width: 100%;
+    }
+
+    .insta-grid img,
+    .insta-grid video {
+      width: 100%;
+      margin-bottom: 15px;
+      /* vertical gap */
+      break-inside: avoid;
+      display: block;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 1024px) {
+      .insta-grid {
+        column-count: 3;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .insta-grid {
+        column-count: 2;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .insta-grid {
+        column-count: 2;
+      }
+    }
+
+
+    /* Modal styling */
+    .modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.85);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+
+    .modal.open {
+      display: flex;
+    }
+
+    #modalImage,
+    #modalVideo {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 10px;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 3rem;
+      color: white;
+      cursor: pointer;
+    }
+
+    span {
+      background: var(--primary);
+      color: #000;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full px-6 py-4 flex justify-between items-center bg-black z-50">
+    <a href="index.html" class="text-2xl font-bold gradient-text">
+      <span>Designsby</span>.Raj
+    </a>
+
+    <div class="space-x-6 hidden md:flex">
+      <a href="#design">Design</a>
+      <a href="#development">Video Edits</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Design Section -->
+  <section id="design" class="pt-32 px-4">
+    <h2 class="text-3xl text-center gradient-text mb-4">Design <span>Showcase</span></h2>
+    <p class="text-center text-gray-400 mb-6">Creative works spanning branding, print, and digital art.</p>
+
+    <div class="insta-grid">
+      <img src="https://res.cloudinary.com/drlklaxrx/image/upload/v1765176988/Frame_1_cxbbwx.png"
+        onclick="openModal(this.src)">
+      <img src="https://res.cloudinary.com/drlklaxrx/image/upload/v1765176981/Slide_16_9_-_4_uj0kcd.png"
+        onclick="openModal(this.src)">
+      <img src="https://res.cloudinary.com/drlklaxrx/image/upload/v1765176982/Frame_2_bppwtd.png"
+        onclick="openModal(this.src)">
+      <img src="https://res.cloudinary.com/drlklaxrx/image/upload/v1765176981/Slide_16_9_-_1_rwfbb2.png"
+        onclick="openModal(this.src)">
+      <img src="https://res.cloudinary.com/drlklaxrx/image/upload/v1765176980/Frame_4_yjf0wt.png"
+        onclick="openModal(this.src)">
+      <img src="https://res.cloudinary.com/drlklaxrx/image/upload/v1765176979/Frame_258_ehlggf.png"
+        onclick="openModal(this.src)">
+      <img src="https://res.cloudinary.com/drlklaxrx/image/upload/v1765176981/Instagram_post_-_1_zxa2hs.png"
+        onclick="openModal(this.src)">
+      <img src="https://res.cloudinary.com/drlklaxrx/image/upload/v1765179856/App_UI_pxhkp1.png"
+        onclick="openModal(this.src)">
+    </div>
+  </section>
+
+  <!-- Video Section -->
+  <section id="development" class="pt-32 px-4">
+    <h2 class="text-3xl text-center gradient-text mb-4">Video Edits <span>Showcase</span></h2>
+    <p class="text-center text-gray-400 mb-6">Professional video edits and UI animations.</p>
+
+    <div class="insta-grid">
+      <video src="https://res.cloudinary.com/drlklaxrx/video/upload/v1765177183/Portfolio_Video_hbqmmn.mp4" muted
+        autoplay loop playsinline onclick="openModal(this.src)"></video>
+      <video src="https://res.cloudinary.com/drlklaxrx/video/upload/v1765177385/UI_Design_k9vgma.mp4" muted autoplay
+        loop playsinline onclick="openModal(this.src)"></video>
+      <video src="https://res.cloudinary.com/drlklaxrx/video/upload/v1765177396/3d_Stalls_kdcmxv.mp4" muted autoplay
+        loop playsinline onclick="openModal(this.src)"></video>
+      <video src="https://res.cloudinary.com/drlklaxrx/video/upload/v1765177384/Blinkit_cxhcul.mp4" muted autoplay loop
+        playsinline onclick="openModal(this.src)"></video>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="previewModal" class="modal">
+    <span class="modal-close" onclick="closeModal()">&times;</span>
+    <img id="modalImage" style="display:none;">
+    <video id="modalVideo" style="display:none;" controls autoplay></video>
+  </div>
+
+  <!-- Contact Section -->
+  <section id="contact" class="pt-32 pb-20 text-center">
+    <h2 class="text-4xl gradient-text mb-4">Let's <span>Work</span> Together</h2>
+    <p class="text-gray-400 mb-8">Reach out to discuss your next big idea.</p>
+    <a href="mailto:you@example.com" class="btn bg-[#00ff66] text-black px-6 py-3 rounded-full font-bold">Send a
+      Message</a>
+  </section>
+
+  <footer class="py-6 text-center text-gray-500">
+    &copy; 2025 Rishabh Raj. All rights reserved.
+  </footer>
+
+  <!-- Modal Script -->
+  <script>
+    const modal = document.getElementById("previewModal");
+    const modalImg = document.getElementById("modalImage");
+    const modalVideo = document.getElementById("modalVideo");
+
+    function openModal(src) {
+      modal.classList.add("open");
+
+      if (src.endsWith(".mp4")) {
+        modalImg.style.display = "none";
+        modalVideo.style.display = "block";
+        modalVideo.src = src;
+        modalVideo.play();
+      } else {
+        modalVideo.style.display = "none";
+        modalImg.style.display = "block";
+        modalImg.src = src;
+      }
+    }
+
+    function closeModal() {
+      modal.classList.remove("open");
+      modalImg.src = "";
+      modalVideo.pause();
+      modalVideo.src = "";
+    }
+
+    // Close modal when clicking outside the image/video
+    modal.addEventListener("click", function (e) {
+      // if click is NOT on the content itself, close modal
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+
+  </script>
+
+</body>
+
+</html>

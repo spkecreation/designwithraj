@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rishabh Raj | Graphic Designer & Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="media.css">
+  <link rel="stylesheet" href="indexAnim.css">
+</head>
+
+<body class="antialiased">
+
+  <header class="fixed w-full top-0 left-0 z-50 backdrop-blur-md border-b border-gray-800">
+    <div class="max-w-7xl mx-auto flex justify-between items-center p-4 md:p-6">
+      <div id="logo" aria-label="Wilson Brock Logo"><span>Designsby</span>.Raj</div>
+      <nav class="navbar" aria-label="Primary Navigation">
+        <!-- <a href="#hero" tabindex="0">Home</a> -->
+        <a href="porfolio.html" tabindex="0">Portfolio</a>
+        <a href="Rishabh_Raj_Digital_Artist_Resume.pdf" target="_blank" tabindex="0">My Resume</a>
+        <a href="#services" tabindex="0">Services</a>
+        <a href="#journey" tabindex="0">About</a>
+        <a id="ctn" href="https://wa.link/ypmri6" tabindex="0">Contact</a>
+      </nav>
+      <button aria-label="Toggle menu" class="md:hidden text-2xl text-white focus:ring-2 focus:ring-green-500 rounded"
+        id="menu-toggle">☰</button>
+    </div>
+    <nav id="mobile-menu" class="md:hidden bg-black text-white flex flex-col p-4 space-y-3 hidden"
+      aria-label="Mobile Navigation">
+      <!-- <a href="#hero" tabindex="-1">Home</a> -->
+      <a href="porfolio.html" tabindex="-1">Portfolio</a>
+      <a href="Rishabh_Raj_Digital_Artist_Resume.pdf" target="_blank" tabindex="-1">My Resume</a>
+      <a href="#services" tabindex="-1">Services</a>
+      <a href="#journey" tabindex="-1">About</a>
+      <a href="https://wa.link/ypmri6" tabindex="-1">Contact</a>
+    </nav>
+  </header>
+
+  <main class="pt-24">
+
+    <!-- Hero Section -->
+    <section id="hero" aria-label="Hero section introducing Wilson Brock">
+      <div id="hero-text" tabindex="0">
+        <small>GRAPHIC DESIGNER & DEVELOPER</small>
+        <h1><span class="bg" style="color: black;">RISHABH</span><br/>RAJ<span aria-hidden="true">↗</span></h1>
+        <p>
+          I'm Raj, a design professional focused on creating engaging motion graphics and visual identities. I believe that good design is both beautiful and functional.
+        </p>
+        <a href="https://wa.link/ypmri6" target="_blank" rel="noopener noreferrer" class="btn-green"
+          aria-label="Let's collaborate on WhatsApp">
+          Let's Collaborate
+        </a>
+
+      </div>
+      <div id="hero-image" aria-label="Portrait of Wilson Brock smiling with crossed arms and colorful lighting">
+        <img id="hero-photo" src="https://res.cloudinary.com/drlklaxrx/image/upload/v1765176088/DP_okkrzj.png" onerror="this.onerror=null;" />
+      </div>
+    </section>
+
+    <!-- Why Work with Me --> 
+    <section id="why-work" aria-label="Reasons to work with Wilson Brock">
+      <h2 tabindex="0">Why Work with Me</h2>
+      <div class="cards" role="list">
+        <article class="card" role="listitem" tabindex="0" aria-label="Tailored Design approach">
+          <div class="icon-container" aria-hidden="true">✔</div>
+          <h3>Tailored Design</h3>
+          <p>I create custom solutions that capture your brand’s essence and vision uniquely and clearly.</p>
+        </article>
+        <article class="card" role="listitem" tabindex="0" aria-label="User-Centric Approach">
+          <div class="icon-container" aria-hidden="true">⭐</div>
+          <h3>User-Centric Approach</h3>
+          <p>Designing intuitive, engaging experiences that keep your audience coming back for more.</p>
+        </article>
+        <article class="card" role="listitem" tabindex="0" aria-label="Trending Technologies">
+          <div class="icon-container" aria-hidden="true">⚡</div>
+          <h3>Trending Technologies</h3>
+          <p>Leveraging the latest tools to keep your brand modern, innovative, and competitive.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" aria-label="Elevating Brands with Design Brilliance">
+      <header>
+        <small>PORTFOLIO SHOWCASE</small>
+        <h2>Elevating <span class="bg">Brands</span> with<br />Design Brilliance</h2>
+      </header>
+      <div id="portfolio-filters" role="tablist" aria-label="Portfolio category filters">
+        <button role="tab" aria-selected="true" data-filter="all" class="active" tabindex="0">All</button>
+        <button role="tab" aria-selected="false" data-filter="web" tabindex="-1">Web Design</button>
+        <button role="tab" aria-selected="false" data-filter="branding" tabindex="-1">Branding</button>
+        <button role="tab" aria-selected="false" data-filter="mobile" tabindex="-1">Motion Graphics</button>
+      </div>
+      <div id="portfolio-grid" aria-live="polite" aria-relevant="additions removals">
+        <div class="portfolio-card" data-category="web" tabindex="0"
+          aria-label="Project card for Responsive Website Design">
+          Responsive Website Design
+        </div>
+        <div class="portfolio-card" data-category="branding" tabindex="0"
+          aria-label="Project card for Logo and Identity">
+          Logo and Identity
+        </div>
+        <div class="portfolio-card" data-category="mobile" tabindex="0" aria-label="Project card for UI Designs">
+          UI Designs
+        </div>
+        <div class="portfolio-card" data-category="web" tabindex="0" aria-label="Project card for E-commerce Platform">
+          E-commerce Platform
+        </div>
+        <div class="portfolio-card" data-category="branding" tabindex="0"
+          aria-label="Project card for Brand Guidelines">
+          Brand Guidelines
+        </div>
+        <div class="portfolio-card" data-category="mobile" tabindex="0"
+          aria-label="Project card for User Graphic Designs">
+          SaaS Explainer Ads
+        </div>
+      </div>
+      <div class="text-center mt-10">
+        <a href="porfolio.html">
+          <button class="btn-green" aria-label="View all projects button">View All Projects</button>
+        </a>
+      </div>
+    </section>
+
+    <!-- Workflow Section -->
+    <section id="workflow" aria-label="Creative Workflow">
+      <div class="content">
+        <div id="workflow-text" tabindex="0">
+          <small>MY PROCESS</small>
+          <h2>My Creative Workflow</h2>
+          <a href="https://wa.link/ypmri6" target="_blank">
+            <button class="btn-green" aria-label="Get In touch button">Get In Touch</button >
+          </a>
+        </div>
+        <div id="workflow-steps" aria-label="Steps in creative workflow">
+          <ol>
+            <li>
+              <strong>1. Discovery</strong>
+              <span>Understanding your brand, goals, and target audience to create a solid foundation.</span>
+            </li>
+            <li>
+              <strong>2. Design</strong>
+              <span>Crafting wireframes and mockups that reflect your vision and resonate with your users.</span>
+            </li>
+            <li>
+              <strong>3. Development</strong>
+              <span>Bringing your design to life using cutting-edge technology for flawless performance.</span>
+            </li>
+            <li>
+              <strong>4. Launch</strong>
+              <span>Deploying the final product and ensuring seamless user experience across all platforms.</span>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" aria-label="Empowering Brands Through Design">
+      <header>
+        <small>WHAT I OFFER</small>
+        <h2>Empowering Brands Through <span class="bg">Design</span></h2>
+      </header>
+      <div id="service-cards">
+        <article class="service-card service-web" tabindex="0" aria-label="Web Design service card">
+          <h3>Web Design</h3>
+          <p>Creating responsive, beautiful websites that perform seamlessly across all devices.</p>
+          <ul>
+            <li>Custom website designs</li>
+            <li>SEO optimized</li>
+            <li class="cursive">Creative visual concepts</li>
+          </ul>
+          <a href="https://wa.link/ypmri6" target="_blank">
+            <button class="btn-green" aria-label="Contact for web design">CONTACT ME</button>
+          </a>
+        </article>
+        <article class="service-card service-dev" tabindex="0" aria-label="Development service card">
+          <h3>Development</h3>
+          <p>Building fast, scalable, and secure applications with clean code and user experience in mind.</p>
+          <ul>
+            <li>Frontend & backend</li>
+            <li>API integrations</li>
+            <li class="cursive">Cross-platform</li>
+          </ul>
+          <a href="https://wa.link/ypmri6" target="_blank">
+            <button class="btn-green" aria-label="Contact for development">CONTACT ME</button>
+          </a>
+        </article>
+        <article class="service-card service-brand" tabindex="0" aria-label="Brand Identity service card">
+          <h3>Brand Identity</h3>
+          <p>Designing logos, palettes, and assets that make your brand instantly recognizable and memorable.</p>
+          <ul>
+            <li>Logo creation</li>
+            <li>Corporate branding</li>
+            <li class="cursive">Brand storytelling</li>
+          </ul>
+          <a href="https://wa.link/ypmri6" target="_blank">
+            <button id="ctn2" class="btn-green" aria-label="Contact for brand identity">CONTACT ME</button>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Design Journey Section -->
+    <section id="journey" aria-label="Discover my design journey">
+      <small>ABOUT ME</small>
+      <h2 tabindex="0">Discover <span class="bg">My Design</span> Journey</h2>
+      <p tabindex="0">With years of experience and a passion for innovative design, I've helped diverse brands elevate
+        their visual presence and digital impact. Let's connect and create something remarkable.</p>
+      <div class="social-links" role="list">
+        <a href="https://www.instagram.com/designsby_raj/" aria-label="Insta profile" role="listitem" target="_blank"
+          rel="noopener noreferrer">Insta</a>
+        <a href="https://github.com/spkecreation" aria-label="GitHub profile" role="listitem" target="_blank"
+          rel="noopener noreferrer">Github</a>
+        <a href="https://www.linkedin.com/in/rishabh-raj-sp/" aria-label="LinkedIn profile" role="listitem"
+          target="_blank" rel="noopener noreferrer">Linkedin</a>
+        <a href="https://wa.link/ypmri6" aria-label="Dribbble profile" role="listitem" target="_blank"
+          rel="noopener noreferrer">Whatsapp</a>
+      </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section id="success-stories" aria-label="Success Stories and Client Feedback">
+      <div class="stats" aria-label="Project statistics">
+        <div class="stat" tabindex="0">
+          <h3>05+</h3>
+          <p>Years of Experience</p>
+        </div>
+        <div class="stat" tabindex="0">
+          <h3>50+</h3>
+          <p>Projects Delivered</p>
+        </div>
+        <div class="stat" tabindex="0">
+          <h3>98%</h3>
+          <p>Client Satisfaction</p>
+        </div>
+      </div>
+      <div class="testimonials" role="list">
+        <blockquote class="testimonial-card" role="listitem" tabindex="0"
+          aria-label="Client testimonial about dedication and problem-solving">
+          <p>Working with Raj was a game-changer. His dedication and problem-solving skills took our project beyond
+            expectations.</p>
+          <footer>- Navjot Batti.</footer>
+        </blockquote>
+        <blockquote class="testimonial-card testimonial-alt" role="listitem" tabindex="0"
+          aria-label="Client testimonial praising creative solutions and communication">
+          <p>Raj delivers amazing creative solutions and communicates clearly every step of the way. Highly
+            recommended.</p>
+          <footer>- Sahil G.</footer>
+        </blockquote>
+        <blockquote class="testimonial-card" role="listitem" tabindex="0"
+          aria-label="Client testimonial about dedication and problem-solving">
+          <p>Collaborating with Raj was transformative. His commitment and ability to solve challenges efficiently
+            brought exceptional value to our project.</p>
+          <footer>- Nirmal.</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section id="cta-contact" aria-label="Contact call to action">
+      <h2 tabindex="0">Let's Turn your Ideas into Reality</h2>
+      <p tabindex="0">illustratorraj@gmail.com</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2023 Rishabh Raj. All rights reserved.
+  </footer>
+  <!-- <footer>
+    <p>© 2024 Wilson Brock. All rights reserved. | <a href="#hero">Home</a> | <a href="#portfolio">Portfolio</a> | <a
+        href="#workflow">Workflow</a> | <a href="#services">Services</a> | <a href="#journey">About</a> | <a
+        href="#cta-contact">Contact</a></p>
+  </footer> -->
+
+  <script>
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuToggle.addEventListener('click', () => {
+      const isExpanded = mobileMenu.classList.contains('hidden');
+      if (isExpanded) {
+        mobileMenu.classList.remove('hidden');
+        menuToggle.setAttribute('aria-expanded', 'true');
+        // Set tabindex for links in menu for accessibility
+        mobileMenu.querySelectorAll('a').forEach(a => a.setAttribute('tabindex', '0'));
+      } else {
+        mobileMenu.classList.add('hidden');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        mobileMenu.querySelectorAll('a').forEach(a => a.setAttribute('tabindex', '-1'));
+      }
+    });
+
+    // Portfolio filter functionality
+    const filterButtons = document.querySelectorAll('#portfolio-filters button');
+    const portfolioCards = document.querySelectorAll('#portfolio-grid .portfolio-card');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Remove active and change aria-selected
+        filterButtons.forEach(btn => {
+          btn.classList.remove('active');
+          btn.setAttribute('aria-selected', 'false');
+          btn.setAttribute('tabindex', '-1');
+        });
+        button.classList.add('active');
+        button.setAttribute('aria-selected', 'true');
+        button.setAttribute('tabindex', '0');
+
+        const filter = button.getAttribute('data-filter');
+        portfolioCards.forEach(card => {
+          if (filter === 'all' || card.dataset.category === filter) {
+            card.style.display = 'flex';
+            card.setAttribute('tabindex', '0');
+          } else {
+            card.style.display = 'none';
+            card.setAttribute('tabindex', '-1');
+          }
+        });
+        // Focus first visible card after filtering
+        const firstVisible = [...portfolioCards].find(c => c.style.display !== 'none');
+        if (firstVisible) firstVisible.focus();
+      });
+    });
+  </script>
+
+</body>
+
+</html>

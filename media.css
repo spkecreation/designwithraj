@@ -1,0 +1,60 @@
+@media (max-width: 768px){
+    #menu-toggle{
+        margin-right: 20px;
+    }
+
+    #hero{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        padding: 50px;
+        padding-top: 0px;
+    }
+    #journey .social-links{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #hero-text{
+        display: flex;
+        flex-direction: column;
+    }
+    #journey{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .testimonial-card{
+        border: solid 2px #22c55e;
+    }
+    #hero-text{
+        order: 2;
+    }
+
+    #hero-text h1{
+        font-size: 4rem;
+    }
+    #hero-text small{
+        font-size: 10px;
+    }
+    #hero-image{
+        order: 1;
+        display: flex;
+        justify-content: center;
+    }
+    #success-stories .stats{
+        display: flex;
+        /* background-color: red; */
+        justify-content: center;
+        gap: 1rem;
+    }
+    #success-stories .stat{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+}
